@@ -135,6 +135,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
 }
 
@@ -142,6 +144,7 @@ h1 {
   height: 10vh;
   min-height: 10vh;
   margin-bottom: 0;
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -342,10 +345,12 @@ h1 {
     min-height: 75vh;
     margin-bottom: 0;
     padding-top: 25vh;
+    padding-bottom: 0;
   }
 
   .spaced-div.spacer {
     height: 20vh;
+    padding-top: 20vh;
     padding-bottom: 20px;
   }
 
