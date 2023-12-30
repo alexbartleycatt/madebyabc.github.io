@@ -1,6 +1,6 @@
 :root {
   --jet: #333;
-  --cosmic-latte: #fff9ed;
+  --cosmic-latte: #f6f6f6;
   --glaucous: #677db7;
   --light-coral: #ee7674;
   --green: #4d6f53;
@@ -221,7 +221,17 @@ h1 {
 }
 
 .text-field {
+  border: 1px solid #ccc;
+  border-radius: 5px;
   margin-bottom: 20px;
+}
+
+.text-field.name {
+  width: 50%;
+}
+
+.text-field.email {
+  width: 75%;
 }
 
 .checkbox-field {
@@ -309,6 +319,12 @@ h1 {
   position: static;
 }
 
+.work-content.wide {
+  flex-direction: column;
+  align-items: stretch;
+  display: none;
+}
+
 .work-image {
   max-width: 34%;
 }
@@ -332,6 +348,15 @@ h1 {
 
 .underlined-link:hover {
   color: var(--glaucous);
+}
+
+.large-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paragraph, .paragraph-2, .paragraph-3, .paragraph-4, .paragraph-5, .paragraph-6, .paragraph-7, .paragraph-8, .paragraph-9, .paragraph-10, .paragraph-11, .paragraph-12 {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 991px) {
@@ -420,20 +445,20 @@ h1 {
 
 @media screen and (max-width: 479px) {
   .intro-heading {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .nav-text {
     font-size: 24px;
   }
 
-  .paragraph-styled {
-    font-size: 16px;
+  .paragraph-styled, .paragraph-styled.small {
+    font-size: 15px;
   }
 
   .spaced-div {
+    min-height: 0;
     padding-top: 20vh;
-    padding-bottom: 10vh;
   }
 
   .left-panel {
@@ -444,6 +469,35 @@ h1 {
     padding: 21px;
   }
 
+  .styled-link.contact, .styled-link.media {
+    font-size: 16px;
+  }
+
+  .text-field {
+    font-size: 15px;
+  }
+
+  .text-field.name {
+    width: 70%;
+  }
+
+  .text-field.email {
+    width: 85%;
+  }
+
+  .checkbox-label {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .submit-button, .field-label {
+    font-size: 15px;
+  }
+
+  .dive-block-3 {
+    width: 50%;
+  }
+
   .work-icon {
     max-height: 50px;
   }
@@ -451,6 +505,10 @@ h1 {
   .work-title, .work-content {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .form {
+    font-size: 15px;
   }
 }
 
