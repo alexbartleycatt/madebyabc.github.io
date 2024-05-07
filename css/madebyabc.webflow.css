@@ -185,6 +185,15 @@ h3 {
 
 .cardtitle {
   color: var(--white);
+  text-align: center;
+}
+
+.portfoliolink {
+  color: var(--white);
+}
+
+.portfoliolink:hover {
+  opacity: .8;
 }
 
 @media screen and (max-width: 991px) {
